@@ -1,6 +1,3 @@
-¡Claro! Te armo un `README.md` bonito y directo para levantar **SQL Server en Docker**.  
-Aquí tienes:  
-
 ```markdown
 # SQL Server en Docker
 
@@ -23,13 +20,13 @@ docker pull mcr.microsoft.com/mssql/server:2022-latest
 2. **Crear y correr el contenedor**
 
 ```bash
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=TuPasswordFuerte123" \
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=TuPasswordFuerte123@@" \
   -p 1433:1433 --name sqlserver \
   -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
 > ⚡ Nota:
-> - Cambia `TuPasswordFuerte123` por una contraseña segura.
+> - Cambia `TuPasswordFuerte123@@` por una contraseña segura.
 > - El contenedor expone el puerto **1433** para conexiones externas.
 
 3. **Verificar que esté corriendo**
@@ -62,7 +59,7 @@ Puedes conectarte usando:
 | Servidor     | `localhost` o `127.0.0.1`  |
 | Puerto       | `1433`                    |
 | Usuario      | `sa`                      |
-| Contraseña   | `TuPasswordFuerte123`      |
+| Contraseña   | `TuPasswordFuerte123@@`      |
 
 ---
 
